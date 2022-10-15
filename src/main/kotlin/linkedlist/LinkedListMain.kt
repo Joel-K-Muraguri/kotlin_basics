@@ -2,11 +2,21 @@ package linkedlist
 
 fun main(){
 
-    val node1 = Node( value = 1)
-    val node2 = Node( value = 2)
-    val node3 = Node( value = 3)
-    val node4 = Node( value = 4)
-    val node5 = Node( value = 5)
+    val list = Node(value = 1, next = Node(value = 2, next = Node(value = 3, next = Node(value = 4, next = Node(value = 5)))))
 
 
+
+    pushExample()
+}
+
+fun pushExample(){
+
+    val list = LinkedList<Int>()
+
+    list.push(3)
+    list.push(10)
+    list.push(748)
+    list.push(4894)
+
+    println(list)
 }
