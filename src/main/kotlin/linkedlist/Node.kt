@@ -2,7 +2,7 @@ package linkedlist
 
 data class Node<T>(
     val value : T,
-    val next : Node<T> ? = null
+    var next : Node<T> ? = null
 ) {
 
     override fun toString(): String {
